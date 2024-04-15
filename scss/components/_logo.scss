@@ -1,0 +1,25 @@
+/* Logo */
+.logo {
+  color: var(--activ-color);
+  font-family: var(--logo-font);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.78px;
+  text-decoration: none;
+}
+
+.logo__half-logo--light {
+  color: #000;
+}
+
+.logo__header {
+  margin-right: 93px;
+}
+
+.logo__half-logo--dark {
+  color: var(--second-color);
+}
+
+.logo__footer {
+  margin-bottom: 20px;
+}

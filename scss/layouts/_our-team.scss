@@ -1,0 +1,43 @@
+/*
+==================================
+-= Our team section =-
+==================================
+*/
+.our-team {
+  background-color: var(--second-bg-color);
+
+  &__item {
+    --items: 4;
+
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    background-color: var(--second-color);
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__name {
+    color: var(--first-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: var(--descr-color);
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 0.48px;
+    margin-bottom: 16px;
+  }
+
+  &__person {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
