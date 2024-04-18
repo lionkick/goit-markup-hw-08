@@ -5,12 +5,15 @@
 */
 
 .regular-customers {
-  &__list {
-    display: flex;
-  }
+  &__item {
+    --items: 2;
+    @include mq(tablet) {
+      --items: 3;
+    }
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
+    @include mq(desktop) {
+      --items: 6;
+    }
   }
 
   &__link {
@@ -18,8 +21,8 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
-    height: 92px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     border: 1px solid #afb1b8;
     border-radius: 4px;

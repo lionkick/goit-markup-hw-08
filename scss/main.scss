@@ -1,6 +1,7 @@
 // Utils
 @import './utils/vars';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 
 //base styles
 @import './base/common';
@@ -18,8 +19,8 @@
 // layouts
 @import './layouts/header';
 @import './layouts/hero';
-@import './layouts/card';
-@import './layouts/what-do-we-do';
+@import './layouts/features';
+@import './layouts/about';
 @import './layouts/our-team';
 @import './layouts/regular-customers';
 @import './layouts/portfolio';

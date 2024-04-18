@@ -38,16 +38,27 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+  }
 }
 
 h1,
@@ -78,12 +89,25 @@ img {
 }
 
 .container {
-  /* outline: 1px solid red; */
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 /*
@@ -608,11 +632,6 @@ img {
 ===================================
 */
 .hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: var(--footer-bg-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-hero.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero.jpg);
@@ -620,13 +639,37 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767.98px) {
+  .hero {
+    width: 480px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero {
+    width: 768px;
+    height: 459px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 2.64px;
@@ -634,16 +677,29 @@ img {
   text-transform: uppercase;
   color: var(--second-color);
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-size: 44px;
+  }
+}
 
 /*
 ==================================
--= Cards Section =-
+-= Feauteres section =-
 ==================================
 */
-.cards__item {
-  --items: 4;
+@media screen and (min-width: 768px) {
+  .features__item {
+    --items: 2;
+  }
 }
-.cards__inner {
+@media screen and (min-width: 1200px) {
+  .features__item {
+    --items: 4;
+  }
+}
+.features__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,19 +710,34 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
-  width: 270px;
   height: 120px;
   background: var(--second-bg-color);
   margin-bottom: 30px;
 }
-.cards__title {
-  font-size: 14px;
+@media screen and (min-width: 768px) {
+  .features__inner {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__inner {
+    width: 270px;
+  }
+}
+.features__title {
   font-weight: 700;
-  letter-spacing: 0.42px;
+  font-size: 14px;
+  line-height: decimal-round(strip-unit(16px)/strip-unit(14px), 2);
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.cards__description {
+@media screen and (max-width: 767.98px) {
+  .features__title {
+    text-align: center;
+  }
+}
+.features__description {
   color: var(--descr-color);
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -674,19 +745,29 @@ img {
 
 /*
 ==================================
--= Section What do we do =-
+-= Section About =-
 ==================================
 */
-.what-do-we-do {
+.about {
   /* padding-top: 94px; */
   padding-bottom: 94px;
 }
+@media screen and (max-width: 767.98px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .about {
+    display: none;
+  }
+}
 
-.what-do-we-do__item {
+.about__item {
   --items: 3;
   position: relative;
 }
-.what-do-we-do__item::before {
+.about__item::before {
   content: "";
   display: block;
   height: 70px;
@@ -697,7 +778,7 @@ img {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.what-do-we-do__subtitle {
+.about__subtitle {
   position: absolute;
   bottom: 0;
   display: inline-block;
@@ -720,11 +801,20 @@ img {
   background-color: var(--second-bg-color);
 }
 .our-team__item {
-  --items: 4;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: var(--second-color);
+}
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__item {
+    --items: 4;
+  }
 }
 .our-team__item:last-child {
   margin-right: 0px;
@@ -744,6 +834,9 @@ img {
   letter-spacing: 0.48px;
   margin-bottom: 16px;
 }
+.our-team__pic {
+  width: 100%;
+}
 .our-team__person {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -754,13 +847,18 @@ img {
 -= Regular customers section =-
 ==================================
 */
-.regular-customers__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.regular-customers__item {
+  --items: 2;
 }
-.regular-customers__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .regular-customers__item {
+    --items: 3;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .regular-customers__item {
+    --items: 6;
+  }
 }
 .regular-customers__link {
   display: -webkit-box;
@@ -772,8 +870,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
-  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;

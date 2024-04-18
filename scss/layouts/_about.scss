@@ -1,14 +1,22 @@
 /*
 ==================================
--= Section What do we do =-
+-= Section About =-
 ==================================
 */
-.what-do-we-do {
+.about {
   /* padding-top: 94px; */
   padding-bottom: 94px;
+
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  @include mq(tablet-only) {
+    display: none;
+  }
 }
 
-.what-do-we-do__item {
+.about__item {
   --items: 3;
   position: relative;
 
@@ -24,7 +32,7 @@
   }
 }
 
-.what-do-we-do__subtitle {
+.about__subtitle {
   position: absolute;
   bottom: 0;
   display: inline-block;
