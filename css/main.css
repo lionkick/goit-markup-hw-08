@@ -246,10 +246,15 @@ img {
 .logo {
   color: var(--activ-color);
   font-family: var(--logo-font);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.78px;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 
 .logo__half-logo--light {
@@ -524,24 +529,60 @@ img {
   margin-right: 8px;
 }
 
-/*
-==================================
--= Header section =-
-==================================
-*/
-.header {
-  border-bottom: 1px solid #ececec;
+.menu-toggle {
+  display: none;
 }
-.header__container {
+@media screen and (max-width: 767.98px) {
+  .menu-toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.menu-toggle__ico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-toggle__ico:hover {
+  fill: var(--activ-color);
+  background-color: transparent;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--second-color);
+  z-index: 999;
 }
 
 /* Navigation */
+.navigation {
+  display: block;
+}
+@media screen and (max-width: 767.98px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -589,12 +630,34 @@ img {
   background-color: var(--activ-color);
 }
 
+/*
+==================================
+-= Header section =-
+==================================
+*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* Mail & Phone */
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+@media screen and (max-width: 767.98px) {
+  .header__list {
+    display: none;
+  }
 }
 
 .header__item:not(:last-child) {

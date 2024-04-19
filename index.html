@@ -27,7 +27,7 @@
 
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a
           class="logo logo__header"
@@ -75,8 +75,22 @@
             >
           </li>
         </ul>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            class="menu-toggle__ico"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Section hero -->
@@ -574,6 +588,24 @@
         </div>
       </section>
     </main>
+    <div class="menu-container js-menu-container" is="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-toggle__ico"
+          width="40"
+          height="40"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/icons.svg#close-menu"></use>
+        </svg>
+      </button>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores enim,
+        ipsum accusamus cumque dolor, omnis fugit, nemo dicta quisquam nisi
+        possimus dolorum odit? Quam et explicabo, voluptatibus cumque obcaecati
+        officiis!
+      </p>
+    </div>
 
     <!-- Footer -->
     <!-- <footer class="footer">
@@ -680,5 +712,6 @@
       </div>
     </footer> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

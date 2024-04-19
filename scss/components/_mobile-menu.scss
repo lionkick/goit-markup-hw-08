@@ -1,0 +1,40 @@
+// Кнопка виклику меню
+.menu-toggle {
+  @include mq(mobile-only) {
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border: none;
+    background-color: transparent;
+  }
+  display: none;
+}
+
+.menu-toggle__ico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  &:hover {
+    fill: var(--activ-color);
+    background-color: transparent;
+  }
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--second-color);
+
+  z-index: 999;
+}
