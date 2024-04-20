@@ -18,6 +18,10 @@
 
 .logo__header {
   margin-right: 93px;
+
+  @include mq(tablet) {
+    margin-right: 88px;
+  }
 }
 
 .logo__half-logo--dark {
@@ -25,5 +29,11 @@
 }
 
 .logo__footer {
-  margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  margin-bottom: 28px;
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }

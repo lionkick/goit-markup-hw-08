@@ -588,7 +588,9 @@
         </div>
       </section>
     </main>
-    <div class="menu-container js-menu-container" is="mobile-menu">
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
           class="menu-toggle__ico"
@@ -599,6 +601,7 @@
           <use href="./images/icons.svg#close-menu"></use>
         </svg>
       </button>
+      <h2>Мобільне меню</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores enim,
         ipsum accusamus cumque dolor, omnis fugit, nemo dicta quisquam nisi
@@ -608,89 +611,92 @@
     </div>
 
     <!-- Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__address">
-          <a
-            class="logo logo__footer"
-            href="./index.html"
-            aria-label="Головна сторінка WebStudio"
-          >
-            Web<span class="logo__half-logo--dark">Studio</span>
-          </a>
-          <address class="address">
-            <ul class="footer__list list">
-              <li class="address__item">м. Київ, пр-т Лесі Українки, 26</li>
-              <li class="address__item">
-                <a class="link footer-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
+        <div class="footer__tablet-wrapper">
+          <div class="footer__address">
+            <a
+              class="logo logo__footer"
+              href="./index.html"
+              aria-label="Головна сторінка WebStudio"
+            >
+              Web<span class="logo__half-logo--dark">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="footer__list list">
+                <li class="address__item">м. Київ, пр-т Лесі Українки, 26</li>
+                <li class="address__item">
+                  <a class="link footer-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="link footer-link" href="tel:380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="join">
+            <h3 class="join__title">Приєднуйтесь</h3>
+            <ul class="social list">
+              <li class="social__item">
+                <a
+                  class="social__link social__footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Іконка Instagram"
                 >
+                  <svg class="social__icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a class="link footer-link" href="tel:380961111111"
-                  >+38 096 111 11 11</a
+              <li class="social__item">
+                <a
+                  class="social__link social__footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Іконка Twitter"
                 >
+                  <svg class="social__icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Іконка Facebook"
+                >
+                  <svg class="social__icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  class="social__link social__footer link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Іконка linkedin"
+                >
+                  <svg class="social__icon-footer" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="join">
-          <h3 class="join__title">Приєднуйтесь</h3>
-          <ul class="social list">
-            <li class="social__item">
-              <a
-                class="social__link social__footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Іконка Instagram"
-              >
-                <svg class="social__icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Іконка Twitter"
-              >
-                <svg class="social__icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Іконка Facebook"
-              >
-                <svg class="social__icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                class="social__link social__footer link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Іконка linkedin"
-              >
-                <svg class="social__icon-footer" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="subscribe">
           <h3 class="subscribe__title">Підпишіться на розсилку</h3>
           <form class="subscribe__form">
@@ -710,7 +716,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
