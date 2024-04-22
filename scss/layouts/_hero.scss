@@ -4,19 +4,19 @@
 ===================================
 */
 .hero {
-  @include mq(mobile-only) {
-    width: 480px;
-    // height: 400px;
+  @include mq(mobile) {
+    // width: 480px;
+    height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
   }
 
-  @include mq(tablet-only) {
-    width: 768px;
-    height: 459px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  // @include mq(tablet-only) {
+  //   width: 768px;
+  //   height: 459px;
+  //   padding-top: 118px;
+  //   padding-bottom: 118px;
+  // }
 
   @include mq(desktop) {
     max-width: 1600px;
