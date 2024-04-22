@@ -27,7 +27,7 @@
 
 .header__item {
   &:not(:last-child) {
-    @include mq(tablet) {
+    @include mq(tablet-only) {
       margin-bottom: 10px;
     }
     @include mq(desktop) {

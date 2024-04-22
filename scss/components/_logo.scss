@@ -7,6 +7,11 @@
   letter-spacing: 0.78px;
   text-decoration: none;
 
+  @include mq(mobile-only) {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
   @include mq(desktop) {
     font-size: 26px;
   }
