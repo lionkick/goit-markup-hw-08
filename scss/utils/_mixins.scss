@@ -8,6 +8,7 @@
       @content;
     }
   }
+
   @if $type == 'mobile' {
     @media screen and (min-width: $mobile) {
       @content;
@@ -32,6 +33,14 @@
   }
   @if $type == 'desktop' {
     @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $type == 'retina' {
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
       @content;
     }
   }

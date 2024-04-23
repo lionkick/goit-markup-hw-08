@@ -4,27 +4,10 @@
 ===================================
 */
 .hero {
-  @include mq(mobile) {
-    // width: 480px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
 
-  // @include mq(tablet-only) {
-  //   width: 768px;
-  //   height: 459px;
-  //   padding-top: 118px;
-  //   padding-bottom: 118px;
-  // }
-
-  @include mq(desktop) {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  max-width: 480px;
 
   background-color: var(--footer-bg-color);
   background-image: linear-gradient(
@@ -32,14 +15,73 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/bg-hero.jpg);
+    url(../images/hero/bg-hero_sm.jpg);
+
+  @include mq(retina) {
+    background-color: var(--footer-bg-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg-hero_sm@2x.jpg);
+  }
+
+  @include mq(tablet) {
+    max-width: 768px;
+
+    background-color: var(--footer-bg-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg-hero_md.jpg);
+
+    @include mq(retina) {
+      background-color: var(--footer-bg-color);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/bg-hero_md@2x.jpg);
+    }
+  }
+
+  @include mq(desktop) {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: var(--footer-bg-color);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero/bg-hero_lg.jpg);
+
+    @include mq(retina) {
+      background-color: var(--footer-bg-color);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero/bg-hero_lg@2x.jpg);
+    }
+  }
+
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -52,11 +94,8 @@
   text-transform: uppercase;
   color: var(--second-color);
 
-  @include mq(tablet) {
-  }
-
   @include mq(desktop) {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
   }
 }
