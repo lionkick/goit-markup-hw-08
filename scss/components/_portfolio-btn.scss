@@ -1,10 +1,24 @@
 /* Buttons */
 .portfolio__buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 40px;
+
+  @include mq(tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio-button {
+  @include mq(mobile-only) {
+    margin-bottom: 15px;
+  }
+
   margin-right: 8px;
 }
