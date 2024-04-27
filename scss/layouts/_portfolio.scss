@@ -12,11 +12,21 @@
 
 .portfolio__hidden-description {
   position: absolute;
-  width: 370px;
+  width: 450px;
   height: 294px;
   left: 0;
   top: 0;
   padding: 63px 24px;
+
+  @include mq(tablet) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @include mq(desktop) {
+    width: 370px;
+    height: 294px;
+  }
 
   font-size: 18px;
   line-height: 156%;
