@@ -21,7 +21,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    -webkit-image-set(url(../../images/hero/bg-hero_sm.webp) 1x);
+    -webkit-image-set(url(../images/hero/bg-hero_sm.webp) 1x);
 
   @include mq(retina) {
     background-image: linear-gradient(
@@ -36,7 +36,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../images/hero/bg-hero_sm@2x.webp) 1x);
+      -webkit-image-set(url(../images/hero/bg-hero_sm@2x.webp) 1x);
   }
 
   @include mq(tablet) {
@@ -54,7 +54,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../images/hero/bg-hero_md.webp) 1x);
+      -webkit-image-set(url(../images/hero/bg-hero_md.webp) 1x);
 
     @include mq(retina) {
       background-image: linear-gradient(
@@ -69,7 +69,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../images/hero/bg-hero_md@2x.webp) 1x);
+        -webkit-image-set(url(../images/hero/bg-hero_md@2x.webp) 1x);
     }
   }
 
@@ -92,7 +92,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      -webkit-image-set(url(../../images/hero/bg-hero_lg.webp) 1x);
+      -webkit-image-set(url(../images/hero/bg-hero_lg.webp) 1x);
 
     @include mq(retina) {
       background-image: linear-gradient(
@@ -107,7 +107,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        -webkit-image-set(url(../../images/hero/bg-hero_lg@2x.webp) 1x);
+        -webkit-image-set(url(../images/hero/bg-hero_lg@2x.webp) 1x);
     }
   }
 
