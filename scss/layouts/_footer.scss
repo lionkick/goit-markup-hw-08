@@ -106,6 +106,10 @@
     color: var(--second-color);
     text-align: center;
     margin-bottom: 20px;
+
+    @include mq(desktop) {
+      text-align: left;
+    }
   }
 }
 
@@ -124,6 +128,10 @@
   color: var(--second-color);
   text-align: center;
   margin-bottom: 20px;
+
+  @include mq(desktop) {
+    text-align: left;
+  }
 }
 
 .subscribe__form {

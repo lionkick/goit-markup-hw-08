@@ -853,6 +853,8 @@ img {
 ===================================
 */
 .hero {
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   max-width: 480px;
@@ -1141,6 +1143,12 @@ img {
 ^-= Portfolio section =-
 ^==================================
 */
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* Slider */
 .portfolio__slider {
   position: relative;
@@ -1202,6 +1210,9 @@ img {
 }
 
 .portfolio__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   --items: 1;
   background-color: var(--second-color);
 }
@@ -1217,7 +1228,13 @@ img {
 }
 
 .portfolio__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1229,6 +1246,9 @@ img {
 }
 
 .portfolio__wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px 20px 24px;
   border-right: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -1352,6 +1372,11 @@ img {
   text-align: center;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .join__title {
+    text-align: left;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .subscribe {
@@ -1367,6 +1392,11 @@ img {
   color: var(--second-color);
   text-align: center;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__title {
+    text-align: left;
+  }
 }
 
 .subscribe__form {
