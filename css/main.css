@@ -583,9 +583,6 @@ img {
 }
 @media screen and (max-width: 767.98px) {
   .menu-toggle {
-    position: absolute;
-    top: 10px;
-    right: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -595,6 +592,7 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: auto;
     border: none;
     background-color: transparent;
   }
@@ -616,6 +614,8 @@ img {
 .menu-toggle__ico:hover {
   fill: var(--activ-color);
   background-color: transparent;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container {
@@ -632,7 +632,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--second-color);
-  padding: 48px 40px;
+  padding: 10px 15px 48px 40px;
   z-index: 999;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -857,7 +857,7 @@ img {
   margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  min-width: 320px;
   background-color: var(--footer-bg-color);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-hero_sm.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_sm.jpg);
@@ -877,7 +877,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
+    min-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-hero_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero_md.jpg);
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), -webkit-image-set(url(../images/hero/bg-hero_md.webp) 1x);
