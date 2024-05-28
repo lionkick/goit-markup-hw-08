@@ -58,6 +58,7 @@
 }
 
 .mobile-menu__contacts {
+  width: 100%;
   margin-top: auto;
 }
 
@@ -100,15 +101,22 @@
 
 .mobile-menu_socials {
   display: flex;
+  // width: 100%;
 }
 
 .mobile-menu_socials .mobile-menu__item {
   display: inline-block;
+  display: flex;
+  // width: 100%;
   font-weight: 500;
   font-size: 18px;
   line-height: 122%;
   letter-spacing: 0.02em;
   color: var(--activ-color);
+
+  @media screen and (man-width(320px)) {
+    font-size: 12px;
+  }
 }
 
 .mobile-menu_socials .mobile-menu__item:not(:last-child) {
