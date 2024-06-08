@@ -497,7 +497,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -649,6 +649,7 @@ img {
 }
 
 .mobile-menu__contacts {
+  width: 100%;
   margin-top: auto;
 }
 
@@ -697,11 +698,19 @@ img {
 
 .mobile-menu_socials .mobile-menu__item {
   display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 500;
   font-size: 3.75vw;
   line-height: 122%;
   letter-spacing: 0.02em;
   color: var(--activ-color);
+}
+@media screen and (man-width(320px)) {
+  .mobile-menu_socials .mobile-menu__item {
+    font-size: 12px;
+  }
 }
 
 .mobile-menu_socials .mobile-menu__item:not(:last-child) {
