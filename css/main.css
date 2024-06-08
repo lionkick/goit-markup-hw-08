@@ -676,14 +676,14 @@ img {
 
 .mobile-menu__contacts .mobile-menu__item {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 5vw;
   letter-spacing: 0.02em;
   color: var(--descr-color);
 }
 
 .mobile-menu__contacts .mobile-menu__item:first-child {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 7.083vw;
   letter-spacing: 0.02em;
   color: var(--activ-color);
   margin-bottom: 32px;
@@ -698,7 +698,7 @@ img {
 .mobile-menu_socials .mobile-menu__item {
   display: inline-block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 3.75vw;
   line-height: 122%;
   letter-spacing: 0.02em;
   color: var(--activ-color);
